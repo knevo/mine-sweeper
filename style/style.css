@@ -1,0 +1,79 @@
+.game-container {
+    height: 300px;
+    width: 300px;
+    color: white;
+    table-layout: fixed;
+    border: 2px solid #7B7B7B;
+    background-color: #C0C0C0;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    background-color: #C0C0C0;
+    border: 1.5px solid;
+    border-top-color: #ffffff;
+    border-right-color: #7B7B7B;
+    border-bottom-color: #7B7B7B;
+    border-left-color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.mine, .flag {
+    width: 30px;
+    height: 30px;
+}
+
+.cell.bombOver {
+    background-color: red;
+}
+
+caption {
+    padding: 20px;
+    caption-side: top;
+    background-color: #C0C0C0;
+    border: 2px solid;
+    border-top-color: #ffffff;
+    border-right-color: #7B7B7B;
+    border-bottom-color: #7B7B7B;
+    border-left-color: #ffffff;
+    font-size: 40px;
+}
+
+.cell:active {
+    background-color: #7B7B7B;
+}
+
+.smiley:active {
+    background-color: #7B7B7B;
+}
+
+.smiley {
+    border: 2px solid;
+    border-top-color: #ffffff;
+    border-right-color: #7B7B7B;
+    border-bottom-color: #7B7B7B;
+    border-left-color: #ffffff;
+    text-align: center;
+}
+
+span.timerDisplay {
+    color:red;
+    background-color: black;
+    float: right;
+}
+.side-menu{
+    padding: 20px;
+    width: 500px;
+    background-color: #C0C0C0;
+    border: 2px solid;
+    border-top-color: #ffffff;
+    border-right-color: #7B7B7B;
+    border-bottom-color: #7B7B7B;
+    border-left-color: #ffffff;
+    font-size: 40px;
+}
