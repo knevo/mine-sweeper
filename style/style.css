@@ -1,16 +1,17 @@
 .game-container {
     height: 300px;
     width: 300px;
-    color: white;
+    color: black;
     table-layout: fixed;
     border: 2px solid #7B7B7B;
     background-color: #C0C0C0;
+    float: left;
 }
 
 .cell {
     width: 50px;
     height: 50px;
-    background-color: #C0C0C0;
+    background-color: #B0B0B0;
     border: 1.5px solid;
     border-top-color: #ffffff;
     border-right-color: #7B7B7B;
@@ -43,7 +44,11 @@ caption {
     border-left-color: #ffffff;
     font-size: 40px;
 }
+.lifeCnt{
+    color: red;
 
+    float: left;
+}
 .cell:active {
     background-color: #7B7B7B;
 }
@@ -62,13 +67,14 @@ caption {
 }
 
 span.timerDisplay {
-    color:red;
-    background-color: black;
+    color: red;
+
     float: right;
 }
-.side-menu{
+
+.side-menu {
+    font-family: cursive;
     padding: 20px;
-    width: 500px;
     background-color: #C0C0C0;
     border: 2px solid;
     border-top-color: #ffffff;
@@ -76,4 +82,119 @@ span.timerDisplay {
     border-bottom-color: #7B7B7B;
     border-left-color: #ffffff;
     font-size: 40px;
+    float: right;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.container {
+    width: 70%;
+    position: absolute;
+}
+h3 {
+    font-size: 30px;
+}
+.hints-container{
+    padding-top: 30px;
+    margin: 0px;
+}
+.hints-container h3{
+    padding-top:0px ;
+    margin:0px;
+}
+
+
+.used {
+    pointer-events: none;
+}
+
+.hint img {
+    width: 100px;
+    height: 100px;
+}
+
+.cell.shown {
+    background-color: lightgray;
+}
+
+.popup {
+    background-color: #C0C0C0;
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    float: right;
+    font-size: 30px;
+    border: solid 5px black;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.popup input, button {
+    font-size: 30px;
+    padding: 20px;
+}
+
+.popup .timerDisplay {
+    padding: 20px;
+}
+
+.scores-container {
+    font-size: 25px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.scores-container, th, td {
+    border: solid 2px black;
+}
+
+input[type='radio'] {
+    transform: scale(2);
+}
+
+body {
+    background-color: black;
+}
+
+.safe-click button , .side-menu .godMode{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    line-height: 25px;
+    padding: 13px;
+    border-radius: 19px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+    border: 2px solid rgb(28, 110, 164);
+    display: inline-block;
+    width: 50%;
+}
+
+.safe-click button:hover {
+    background: #1C6EA4;
+}
+
+.safe-click button:active {
+    background: #144E75;
+}
+.safe-click{
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.safe-click h3{
+    margin: 0px;
+    margin-top:20px;
+}
+.side-menu .godMode{
+    display:block;
+    margin: auto;
+    margin-bottom: 20px;
+
 }
